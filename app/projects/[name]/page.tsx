@@ -136,10 +136,13 @@ const projects = [
   },
 ];
 
-export default function JobPage({ params }: { params: { name: string } }) {
-  const project = projects.find((j) => j.id === params.name);
+type Props = Promise<{ params: { name: string } }>
 
-  if (!project) notFound();
+export default async function ProjectPage(props: Props) {
+  const { params } = await props
+  const project = projects.find((j) => j.id === params.name)
 
-  return <ProjectClient project={project} />;
+  if (!project) notFound()
+
+  return <ProjectClient project={project} />
 }
