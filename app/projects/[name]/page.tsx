@@ -136,13 +136,8 @@ const projects = [
   },
 ];
 
-type Props = Promise<{ params: { name: string } }>
-
-export default async function ProjectPage(props: Props) {
-  const { params } = await props
+export default function ProjectPage({ params }: { params: { name: string } }) {
   const project = projects.find((j) => j.id === params.name)
-
   if (!project) notFound()
-
   return <ProjectClient project={project} />
 }
