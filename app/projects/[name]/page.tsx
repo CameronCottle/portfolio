@@ -135,13 +135,9 @@ const projects = [
     ],
   },
 ];
-type ProjectPageProps = {
-  params: { name: string }
-}
 
-export default async function JobPage({ params }: ProjectPageProps) {
-  const { name } = await params;
-  const project = projects.find((p) => p.id === name);
+export default async function JobPage({ params }: { params: { name: string } }) {
+  const project = projects.find((j) => j.id === params.name);
 
   if (!project) notFound();
 
