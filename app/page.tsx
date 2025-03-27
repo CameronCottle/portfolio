@@ -17,7 +17,7 @@ export default function Home() {
               Cybersecurity Ethics & Policy Enthusiast 
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Hi, I'm <GlitchText text="Cam Cottle" highlightColor="text-primary" glitchInterval={4000} />
+              Hi, I&apos;m <GlitchText text="Cam Cottle" highlightColor="text-primary" glitchInterval={4000} />
             </h1>
             <p className="text-xl text-muted-foreground">
               A full stack developer with a passion for cyber ethics and policy at the federal level.
@@ -120,7 +120,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold">Professional Interests</h3>
                   <div className="rounded-lg border bg-card p-4 shadow-sm">
                     <p className="text-sm">
-                      I'm passionate about the intersection of technology and policy, particularly in the realm of cyber
+                      I&apos;m passionate about the intersection of technology and policy, particularly in the realm of cyber
                       ethics. My goal is to work at the federal level, helping shape policies that protect digital
                       privacy while enabling technological innovation. With experience in both software development and
                       policy research, I bring a unique perspective to addressing complex cybersecurity challenges.
@@ -132,8 +132,8 @@ export default function Home() {
                   <h3 className="text-2xl font-bold">Personal Interests</h3>
                   <div className="rounded-lg border bg-card p-4 shadow-sm">
                     <p className="text-sm">
-                      Outside of academics and work, I'm an avid lacrosse player and enjoy spending time outdoors
-                      fishing. I'm also passionate about reading, particularly books on technology ethics and science
+                      Outside of academics and work, I&apos;m an avid lacrosse player and enjoy spending time outdoors
+                      fishing. I&apos;m also passionate about reading, particularly books on technology ethics and science
                       fiction. In my spare time, you can find me working on my motorcycle, combining my technical skills
                       with my love for hands-on projects.
                     </p>
@@ -191,9 +191,9 @@ export default function Home() {
         {/* Contact CTA */}
         <section className="bg-primary text-primary-foreground py-16">
           <div className="container mx-auto px-6 sm:px-8 text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Let's Connect</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Let&apos;s Connect</h2>
             <p className="mx-auto max-w-2xl text-lg mb-8">
-              I'm always interested in discussing cybersecurity, policy, or potential collaboration opportunities.
+              I&apos;m always interested in discussing cybersecurity, policy, or potential collaboration opportunities.
             </p>
             <Button variant="secondary" size="lg" asChild>
               <Link target="_blank" href="https://cameroncottle.net/">Get in Touch</Link>

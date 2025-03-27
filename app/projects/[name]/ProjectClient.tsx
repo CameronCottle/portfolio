@@ -136,7 +136,7 @@ export default function ProjectClient({ project }) {
               <div className="rounded-lg border bg-card p-6 shadow-sm">
                 <h3 className="text-xl font-bold mb-4">Interested in this work?</h3>
                 <p className="text-muted-foreground mb-4">
-                  I'm available to discuss cybersecurity and policy projects or research opportunities.
+                  I&apos;m available to discuss cybersecurity and policy projects or research opportunities.
                 </p>
                 <Button asChild className="w-full">
                   <Link target="_blank" href="https://cameroncottle.net/">Contact Me</Link>

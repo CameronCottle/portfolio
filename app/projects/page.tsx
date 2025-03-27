@@ -228,7 +228,7 @@ export default function ProjectsPage() {
           >
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Interested in collaboration?</h2>
             <p className="mx-auto max-w-2xl text-lg mb-8">
-              I'm always open to discussing new projects and opportunities in cybersecurity and policy.
+              I&apos;m always open to discussing new projects and opportunities in cybersecurity and policy.
             </p>
             <Button variant="secondary" size="lg" asChild>
               <Link target="_blank" href="https://cameroncottle.net/">Get in Touch</Link>
