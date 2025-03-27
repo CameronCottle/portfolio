@@ -159,8 +159,11 @@ const jobs = [
     ],
   },
 ];
+type JobPageProps = {
+  params: { name: string }
+}
 
-export default async function JobPage({ params }: Promise<{ params: { name: string } }>) {
+export default async function JobPage({ params }: JobPageProps) {
   const { name } = await params;
   const job = jobs.find((j) => j.id === name);
 
