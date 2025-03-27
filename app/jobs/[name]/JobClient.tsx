@@ -7,7 +7,19 @@ import { ArrowLeft, Building, Calendar, MapPin, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-export default function JobClient({ job }) {
+interface Job {
+  logo?: string;
+  company: string;
+  title: string;
+  location: string;
+  dates: string;
+  type: string;
+  skills: string[];
+  description: string;
+  responsibilities: string[];
+}
+
+export default function JobClient({ job }: { job: Job }) {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {

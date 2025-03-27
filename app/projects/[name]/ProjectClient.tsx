@@ -7,7 +7,18 @@ import { ArrowLeft, Calendar, Code2, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-export default function ProjectClient({ project }) {
+interface Project {
+  title: string;
+  image: string;
+  description: string;
+  features: string[];
+  technologies: string[];
+  dates: string;
+  link?: string;
+  github?: string;
+}
+
+export default function ProjectClient({ project }: { project: Project }) {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {
