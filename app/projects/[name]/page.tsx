@@ -136,7 +136,7 @@ const projects = [
   },
 ];
 
-export default async function JobPage({ params }: { params: { name: string } }) {
+export default function JobPage({ params }: { params: { name: string } }) {
   const project = projects.find((j) => j.id === params.name);
 
   if (!project) notFound();
